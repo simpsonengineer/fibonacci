@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 public class Fib {
     public static void main(String[] args) {
 	int numFibs = (args.length > 0) ? Integer.parseInt(args[0]) : 10;
-        System.out.println("10 Fibonacci numbers: " + fibs(numFibs));
+        System.out.println("Fibonacci terms: " + fibs(numFibs));
     }
 
     private static List<BigInteger> fibs(int numFibs) {
