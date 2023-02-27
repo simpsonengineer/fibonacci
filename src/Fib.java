@@ -5,8 +5,8 @@ import java.util.stream.Stream;
 
 public class Fib {
     public static void main(String[] args) {
-        System.out.println("10 Fibonacci numbers: " + fibs(10));
-        System.out.println("20 Fibonacci numbers: " + fibs(20));
+	int numFibs = (args.length > 0) ? Integer.parseInt(args[0]) : 10;
+        System.out.println("10 Fibonacci numbers: " + fibs(numFibs));
     }
 
     private static List<BigInteger> fibs(int numFibs) {
